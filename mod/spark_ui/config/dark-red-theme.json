@@ -1,0 +1,139 @@
+{
+  "$schema": "./theme.schema.json",
+  "schemaVersion": 4,
+  "id": "chatgpt-ui-dark-red",
+  "name": "Dark Red",
+  "description": "The preserved dark-red title bar and user prompt theme with every supported color role made explicit.",
+  "colors": {
+    "surfaces": {
+      "windowBackground": "#000040",
+      "sidebarBackground": "#000032",
+      "editorBackground": "#121249",
+      "titleBarBackground": "#6e0002",
+      "applicationMenuBackground": "#111148",
+      "elevatedBackground": "rgba(68, 68, 98, 0.96)",
+      "elevatedSecondaryBackground": "#2d2d56",
+      "controlBackground": "rgba(45, 45, 86, 0.96)",
+      "inputBackground": "rgba(45, 45, 86, 0.96)",
+      "dropdownBackground": "#2d2d56",
+      "menuBackground": "rgba(68, 68, 98, 0.96)",
+      "codeBackground": "rgba(255, 255, 191, 0.087)",
+      "terminalBackground": "#000040",
+      "userPromptBackground": "#6e0002",
+      "userPromptHover": "#7f0002"
+    },
+    "text": {
+      "primary": "#ffffbf",
+      "secondary": "rgba(255, 255, 191, 0.65)",
+      "tertiary": "rgba(255, 255, 191, 0.72)",
+      "disabled": "rgba(255, 255, 191, 0.5)",
+      "inverse": "#000016",
+      "accent": "#c0ccff",
+      "link": "#c0ccff",
+      "code": "#ffffbf",
+      "titleBar": "#ffffbf",
+      "userPrompt": "#ffffbf",
+      "buttonPrimary": "#000016",
+      "buttonSecondary": "#111148",
+      "info": "#c0ccff",
+      "success": "#40c977",
+      "warning": "#ff8549",
+      "danger": "#ff6764"
+    },
+    "icons": {
+      "primary": "#ffffbf",
+      "secondary": "rgba(255, 255, 191, 0.88)",
+      "tertiary": "rgba(255, 255, 191, 0.68)",
+      "accent": "#c0ccff",
+      "success": "#40c977",
+      "warning": "#ff8549",
+      "danger": "#ff6764"
+    },
+    "borders": {
+      "default": "rgba(255, 255, 191, 0.15)",
+      "subtle": "rgba(255, 255, 191, 0.08)",
+      "strong": "rgba(255, 255, 191, 0.26)",
+      "focus": "rgba(192, 204, 255, 0.93)",
+      "input": "rgba(255, 255, 191, 0.26)",
+      "danger": "rgba(250, 66, 62, 0.4)",
+      "warning": "rgba(255, 133, 73, 0.4)",
+      "userPrompt": "#8f2a2c"
+    },
+    "interactions": {
+      "hoverBackground": "rgba(255, 255, 191, 0.13)",
+      "activeBackground": "rgba(255, 255, 191, 0.09)",
+      "selectionBackground": "rgba(192, 204, 255, 0.3)",
+      "selectionText": "#ffffbf",
+      "accentBackground": "#1d2a63",
+      "accentHover": "#213071",
+      "accentActive": "#253680",
+      "menuSelection": "rgba(255, 255, 191, 0.08)",
+      "dropOverlay": "#253680",
+      "scrollbarHover": "rgba(255, 255, 191, 0.26)",
+      "caret": "#ffffbf",
+      "scrim": "rgba(255, 255, 191, 0.17)"
+    },
+    "buttons": {
+      "primaryBackground": "#000016",
+      "primaryHover": "rgba(255, 255, 191, 0.11)",
+      "secondaryBackground": "rgba(255, 255, 191, 0.09)",
+      "secondaryHover": "rgba(255, 255, 191, 0.13)",
+      "secondaryActive": "rgba(255, 255, 191, 0.21)"
+    },
+    "status": {
+      "infoBackground": "rgba(192, 204, 255, 0.3)",
+      "successBackground": "rgba(4, 184, 76, 0.16)",
+      "warningBackground": "#4a2206",
+      "dangerBackground": "#4d100e",
+      "infoSolid": "#4a6cff",
+      "successSolid": "#008635",
+      "warningSolid": "#fb6a22",
+      "dangerSolid": "#ff6764",
+      "discoverySolid": "#80a0ff",
+      "cautionSolid": "#ffd240",
+      "successSurface": "#011c0b",
+      "warningSurface": "#281105",
+      "dangerSurface": "#280b0a"
+    },
+    "diff": {
+      "addedText": "#13a10e",
+      "deletedText": "#cc0000",
+      "modifiedText": "#ff8549",
+      "unchangedText": "#414141",
+      "addedBackground": "rgba(19, 161, 14, 0.23)",
+      "deletedBackground": "rgba(204, 0, 0, 0.23)",
+      "surface": "#10104c"
+    },
+    "charts": {
+      "blue": "#4a6cff",
+      "green": "#40c977",
+      "orange": "#fb6a22",
+      "purple": "#80a0ff",
+      "red": "#ff6764",
+      "yellow": "#ffd240"
+    },
+    "terminal": {
+      "foreground": "#ffffbf",
+      "selection": "rgba(255, 255, 191, 0.17)",
+      "black": "rgba(255, 255, 191, 0.72)",
+      "red": "#ff6764",
+      "green": "#40c977",
+      "yellow": "#ffd240",
+      "blue": "#4a6cff",
+      "magenta": "#80a0ff",
+      "cyan": "#4a6cff",
+      "white": "#ffffbf",
+      "brightBlack": "rgba(255, 255, 191, 0.88)",
+      "brightRed": "#ff6764",
+      "brightGreen": "#40c977",
+      "brightYellow": "#ffd240",
+      "brightBlue": "#4a6cff",
+      "brightMagenta": "#80a0ff",
+      "brightCyan": "#4a6cff",
+      "brightWhite": "#ffffbf"
+    },
+    "effects": {
+      "userPromptShadow": "rgba(110, 0, 2, 0.24)"
+    }
+  }
+}

@@ -1,0 +1,44 @@
+name: SPARK CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: Node ${{ matrix.node }} / ${{ matrix.os }}
+    timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        node: [24]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: ${{ matrix.node }}
+      - name: Runtime versions
+        run: node --version
+      - name: Prepare isolated disposable CI log directory
+        shell: bash
+        run: mkdir -p log/system
+      - name: Test
+        # Windows default pwsh can contaminate PSModulePath for nested
+        # Windows PowerShell ACL/security tests. Git Bash preserves the
+        # native powershell.exe module search path without skipping tests.
+        shell: bash
+        run: |
+          # Nested Windows PowerShell 5.1 must discover its native security modules.
+          # Do not inherit PowerShell 7's PSModulePath from the CI process.
+          if [[ "$RUNNER_OS" == "Windows" ]]; then
+            unset PSModulePath PSMODULEPATH
+          fi
+          npm --prefix out test

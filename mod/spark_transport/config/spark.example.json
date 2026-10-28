@@ -1,0 +1,43 @@
+{
+  "transport": {
+    "allowedRoot": [
+      {
+        "path": "C:/SPARK/workspace",
+        "permissions": "RWX"
+      },
+      {
+        "path": "C:/SPARK/reference",
+        "permissions": "R"
+      }
+    ],
+    "host": "127.0.0.1",
+    "port": 8765,
+    "mcpPath": "/mcp",
+    "healthPath": "/health",
+    "maxReadBytes": 1048576,
+    "commandTimeoutMs": null,
+    "commandHeartbeatMs": 10000,
+    "commandInitialWaitMs": 2000,
+    "commandRequestSegmentMs": 45000,
+    "operationTimeoutMs": 30000,
+    "httpRequestTimeoutMs": 15000,
+    "serverCloseTimeoutMs": 3000,
+    "stateDir": "log/system",
+    "recycleBin": true
+  },
+  "chatgptUi": {
+    "enabled": true,
+    "theme": "dark-red",
+    "progress": {
+      "enabled": true
+    }
+  },
+  "tunnel": {
+    "enabled": true,
+    "id": "tunnel_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "profile": "spark",
+    "localMcpUrl": "http://127.0.0.1:8765/mcp",
+    "clientVersion": "v0.0.14",
+    "clientDir": "mod/spark_transport/tool/tunnel_client"
+  }
+}

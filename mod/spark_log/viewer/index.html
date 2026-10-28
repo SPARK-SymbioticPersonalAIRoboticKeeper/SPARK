@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ChatGPT JSONL Viewer</title>
+  <!-- Pinned, locally vendored OpenUI MIT component system. Viewer CSS follows to isolate existing shell styles. -->
+  <link rel="stylesheet" href="vendor/openui-styles-0.2.1.css">
+  <link rel="stylesheet" href="viewer.css">
+</head>
+<body>
+  <div id="loader" class="loader">
+    <div class="loader-card">
+      <div class="logo">C</div>
+      <h1>ChatGPT JSONL Viewer</h1>
+      <p>Open a local ChatGPT conversation JSON or JSONL file. Nothing is uploaded.</p>
+      <label class="open-button">Open JSON / JSONL<input id="fileInput" type="file" multiple accept=".json,.jsonl,application/json,application/x-ndjson" hidden></label>
+      <div id="dropZone" class="drop-zone">or drag files here</div>
+      <div id="loadStatus" class="status"></div>
+    </div>
+  </div>
+
+  <div id="app" class="app hidden">
+    <aside class="sidebar">
+      <div class="sidebar-head">
+        <strong>Chat history</strong>
+        <button id="openMore" title="Open more files">+</button>
+      </div>
+      <input id="searchBox" class="search" type="search" placeholder="Search titles">
+      <div id="conversationList" class="conversation-list"></div>
+    </aside>
+    <main class="main">
+      <header class="conversation-head">
+        <div>
+          <h2 id="conversationTitle"></h2>
+          <div id="conversationMeta" class="meta"></div>
+        </div>
+      </header>
+      <section id="messages" class="messages"></section>
+    </main>
+  </div>
+
+  <script src="vendor/marked.umd.js"></script>
+  <script src="vendor/purify.min.js"></script>
+  <script src="vendor/mermaid.min.js"></script>
+  <script src="parser.js"></script>
+  <script src="dil-renderer.js"></script>
+  <script src="vendor/openui-bundle-0.2.1.min.js"></script>
+  <script src="openui-runtime.js"></script>
+  <script src="viewer.js"></script>
+</body>
+</html>

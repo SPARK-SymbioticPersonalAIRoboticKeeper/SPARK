@@ -1,0 +1,238 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "theme.schema.json",
+  "title": "SPARK ChatGPT UI theme",
+  "description": "A complete, beginner-readable map of supported ChatGPT desktop color roles.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "id", "name", "description", "colors"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "schemaVersion": { "const": 4 },
+    "id": { "type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9-]*$" },
+    "name": { "type": "string", "minLength": 1 },
+    "description": { "type": "string", "minLength": 1 },
+    "colors": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "surfaces",
+        "text",
+        "icons",
+        "borders",
+        "interactions",
+        "buttons",
+        "status",
+        "diff",
+        "charts",
+        "terminal",
+        "effects"
+      ],
+      "properties": {
+        "surfaces": {
+          "description": "Window, panel, control, code, terminal, title-bar, and prompt backgrounds.",
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["windowBackground", "sidebarBackground", "editorBackground", "titleBarBackground", "applicationMenuBackground", "elevatedBackground", "elevatedSecondaryBackground", "controlBackground", "inputBackground", "dropdownBackground", "menuBackground", "codeBackground", "terminalBackground", "userPromptBackground", "userPromptHover"],
+          "properties": {
+            "windowBackground": { "$ref": "#/$defs/color" },
+            "sidebarBackground": { "$ref": "#/$defs/color" },
+            "editorBackground": { "$ref": "#/$defs/color" },
+            "titleBarBackground": { "$ref": "#/$defs/color" },
+            "applicationMenuBackground": { "$ref": "#/$defs/color" },
+            "elevatedBackground": { "$ref": "#/$defs/color" },
+            "elevatedSecondaryBackground": { "$ref": "#/$defs/color" },
+            "controlBackground": { "$ref": "#/$defs/color" },
+            "inputBackground": { "$ref": "#/$defs/color" },
+            "dropdownBackground": { "$ref": "#/$defs/color" },
+            "menuBackground": { "$ref": "#/$defs/color" },
+            "codeBackground": { "$ref": "#/$defs/color" },
+            "terminalBackground": { "$ref": "#/$defs/color" },
+            "userPromptBackground": { "$ref": "#/$defs/color" },
+            "userPromptHover": { "$ref": "#/$defs/color" }
+          }
+        },
+        "text": {
+          "description": "Primary through status text, links, code, buttons, title bar, and prompt text.",
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["primary", "secondary", "tertiary", "disabled", "inverse", "accent", "link", "code", "titleBar", "userPrompt", "buttonPrimary", "buttonSecondary", "info", "success", "warning", "danger"],
+          "properties": {
+            "primary": { "$ref": "#/$defs/color" },
+            "secondary": { "$ref": "#/$defs/color" },
+            "tertiary": { "$ref": "#/$defs/color" },
+            "disabled": { "$ref": "#/$defs/color" },
+            "inverse": { "$ref": "#/$defs/color" },
+            "accent": { "$ref": "#/$defs/color" },
+            "link": { "$ref": "#/$defs/color" },
+            "code": { "$ref": "#/$defs/color" },
+            "titleBar": { "$ref": "#/$defs/color" },
+            "userPrompt": { "$ref": "#/$defs/color" },
+            "buttonPrimary": { "$ref": "#/$defs/color" },
+            "buttonSecondary": { "$ref": "#/$defs/color" },
+            "info": { "$ref": "#/$defs/color" },
+            "success": { "$ref": "#/$defs/color" },
+            "warning": { "$ref": "#/$defs/color" },
+            "danger": { "$ref": "#/$defs/color" }
+          }
+        },
+        "icons": {
+          "description": "Primary, secondary, tertiary, accent, and status icon colors.",
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["primary", "secondary", "tertiary", "accent", "success", "warning", "danger"],
+          "properties": {
+            "primary": { "$ref": "#/$defs/color" },
+            "secondary": { "$ref": "#/$defs/color" },
+            "tertiary": { "$ref": "#/$defs/color" },
+            "accent": { "$ref": "#/$defs/color" },
+            "success": { "$ref": "#/$defs/color" },
+            "warning": { "$ref": "#/$defs/color" },
+            "danger": { "$ref": "#/$defs/color" }
+          }
+        },
+        "borders": {
+          "description": "Default, emphasis, focus, input, status, and prompt borders.",
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["default", "subtle", "strong", "focus", "input", "danger", "warning", "userPrompt"],
+          "properties": {
+            "default": { "$ref": "#/$defs/color" },
+            "subtle": { "$ref": "#/$defs/color" },
+            "strong": { "$ref": "#/$defs/color" },
+            "focus": { "$ref": "#/$defs/color" },
+            "input": { "$ref": "#/$defs/color" },
+            "danger": { "$ref": "#/$defs/color" },
+            "warning": { "$ref": "#/$defs/color" },
+            "userPrompt": { "$ref": "#/$defs/color" }
+          }
+        },
+        "interactions": {
+          "description": "Hover, active, selection, accent, drag/drop, scrollbar, caret, and scrim colors.",
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["hoverBackground", "activeBackground", "selectionBackground", "selectionText", "accentBackground", "accentHover", "accentActive", "menuSelection", "dropOverlay", "scrollbarHover", "caret", "scrim"],
+          "properties": {
+            "hoverBackground": { "$ref": "#/$defs/color" },
+            "activeBackground": { "$ref": "#/$defs/color" },
+            "selectionBackground": { "$ref": "#/$defs/color" },
+            "selectionText": { "$ref": "#/$defs/color" },
+            "accentBackground": { "$ref": "#/$defs/color" },
+            "accentHover": { "$ref": "#/$defs/color" },
+            "accentActive": { "$ref": "#/$defs/color" },
+            "menuSelection": { "$ref": "#/$defs/color" },
+            "dropOverlay": { "$ref": "#/$defs/color" },
+            "scrollbarHover": { "$ref": "#/$defs/color" },
+            "caret": { "$ref": "#/$defs/color" },
+            "scrim": { "$ref": "#/$defs/color" }
+          }
+        },
+        "buttons": {
+          "description": "Primary and secondary button backgrounds for normal, hover, and active states.",
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["primaryBackground", "primaryHover", "secondaryBackground", "secondaryHover", "secondaryActive"],
+          "properties": {
+            "primaryBackground": { "$ref": "#/$defs/color" },
+            "primaryHover": { "$ref": "#/$defs/color" },
+            "secondaryBackground": { "$ref": "#/$defs/color" },
+            "secondaryHover": { "$ref": "#/$defs/color" },
+            "secondaryActive": { "$ref": "#/$defs/color" }
+          }
+        },
+        "status": {
+          "description": "Info, success, warning, danger, discovery, caution, badge, and surface colors.",
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["infoBackground", "successBackground", "warningBackground", "dangerBackground", "infoSolid", "successSolid", "warningSolid", "dangerSolid", "discoverySolid", "cautionSolid", "successSurface", "warningSurface", "dangerSurface"],
+          "properties": {
+            "infoBackground": { "$ref": "#/$defs/color" },
+            "successBackground": { "$ref": "#/$defs/color" },
+            "warningBackground": { "$ref": "#/$defs/color" },
+            "dangerBackground": { "$ref": "#/$defs/color" },
+            "infoSolid": { "$ref": "#/$defs/color" },
+            "successSolid": { "$ref": "#/$defs/color" },
+            "warningSolid": { "$ref": "#/$defs/color" },
+            "dangerSolid": { "$ref": "#/$defs/color" },
+            "discoverySolid": { "$ref": "#/$defs/color" },
+            "cautionSolid": { "$ref": "#/$defs/color" },
+            "successSurface": { "$ref": "#/$defs/color" },
+            "warningSurface": { "$ref": "#/$defs/color" },
+            "dangerSurface": { "$ref": "#/$defs/color" }
+          }
+        },
+        "diff": {
+          "description": "Added, deleted, modified, unchanged, and diff editor colors.",
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["addedText", "deletedText", "modifiedText", "unchangedText", "addedBackground", "deletedBackground", "surface"],
+          "properties": {
+            "addedText": { "$ref": "#/$defs/color" },
+            "deletedText": { "$ref": "#/$defs/color" },
+            "modifiedText": { "$ref": "#/$defs/color" },
+            "unchangedText": { "$ref": "#/$defs/color" },
+            "addedBackground": { "$ref": "#/$defs/color" },
+            "deletedBackground": { "$ref": "#/$defs/color" },
+            "surface": { "$ref": "#/$defs/color" }
+          }
+        },
+        "charts": {
+          "description": "The six chart and accent palette colors.",
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["blue", "green", "orange", "purple", "red", "yellow"],
+          "properties": {
+            "blue": { "$ref": "#/$defs/color" },
+            "green": { "$ref": "#/$defs/color" },
+            "orange": { "$ref": "#/$defs/color" },
+            "purple": { "$ref": "#/$defs/color" },
+            "red": { "$ref": "#/$defs/color" },
+            "yellow": { "$ref": "#/$defs/color" }
+          }
+        },
+        "terminal": {
+          "description": "Terminal foreground, selection, eight ANSI colors, and eight bright ANSI colors.",
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["foreground", "selection", "black", "red", "green", "yellow", "blue", "magenta", "cyan", "white", "brightBlack", "brightRed", "brightGreen", "brightYellow", "brightBlue", "brightMagenta", "brightCyan", "brightWhite"],
+          "properties": {
+            "foreground": { "$ref": "#/$defs/color" },
+            "selection": { "$ref": "#/$defs/color" },
+            "black": { "$ref": "#/$defs/color" },
+            "red": { "$ref": "#/$defs/color" },
+            "green": { "$ref": "#/$defs/color" },
+            "yellow": { "$ref": "#/$defs/color" },
+            "blue": { "$ref": "#/$defs/color" },
+            "magenta": { "$ref": "#/$defs/color" },
+            "cyan": { "$ref": "#/$defs/color" },
+            "white": { "$ref": "#/$defs/color" },
+            "brightBlack": { "$ref": "#/$defs/color" },
+            "brightRed": { "$ref": "#/$defs/color" },
+            "brightGreen": { "$ref": "#/$defs/color" },
+            "brightYellow": { "$ref": "#/$defs/color" },
+            "brightBlue": { "$ref": "#/$defs/color" },
+            "brightMagenta": { "$ref": "#/$defs/color" },
+            "brightCyan": { "$ref": "#/$defs/color" },
+            "brightWhite": { "$ref": "#/$defs/color" }
+          }
+        },
+        "effects": {
+          "description": "Color components used by visual effects.",
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["userPromptShadow"],
+          "properties": {
+            "userPromptShadow": { "$ref": "#/$defs/color" }
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "color": {
+      "type": "string",
+      "minLength": 1,
+      "description": "A CSS color such as #6e0002, darkred, rgb(...), rgba(...), or hsl(...)."
+    }
+  }
+}

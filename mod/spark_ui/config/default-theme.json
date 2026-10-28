@@ -1,0 +1,139 @@
+{
+  "$schema": "./theme.schema.json",
+  "schemaVersion": 4,
+  "id": "chatgpt-ui-rainbow-map",
+  "name": "Rainbow Element Map",
+  "description": "A deliberately colorful diagnostic theme that makes every supported color role easy to identify on screen.",
+  "colors": {
+    "surfaces": {
+      "windowBackground": "#240046",
+      "sidebarBackground": "#003566",
+      "editorBackground": "#004b23",
+      "titleBarBackground": "#d00000",
+      "applicationMenuBackground": "#9d0208",
+      "elevatedBackground": "#5f0f40",
+      "elevatedSecondaryBackground": "#9a031e",
+      "controlBackground": "#0a9396",
+      "inputBackground": "#005f73",
+      "dropdownBackground": "#bb3e03",
+      "menuBackground": "#9b5de5",
+      "codeBackground": "#3a0ca3",
+      "terminalBackground": "#001219",
+      "userPromptBackground": "#e00000",
+      "userPromptHover": "#ff4d00"
+    },
+    "text": {
+      "primary": "#ffff00",
+      "secondary": "#00ffff",
+      "tertiary": "#ff9f1c",
+      "disabled": "#adb5bd",
+      "inverse": "#000000",
+      "accent": "#ff00ff",
+      "link": "#00ff66",
+      "code": "#ffffff",
+      "titleBar": "#ffffff",
+      "userPrompt": "#ffffff",
+      "buttonPrimary": "#ffffff",
+      "buttonSecondary": "#ffff00",
+      "info": "#40c4ff",
+      "success": "#00ff66",
+      "warning": "#ffd60a",
+      "danger": "#ff4d6d"
+    },
+    "icons": {
+      "primary": "#ffffff",
+      "secondary": "#00ffff",
+      "tertiary": "#ff9f1c",
+      "accent": "#ff00ff",
+      "success": "#00ff66",
+      "warning": "#ffd60a",
+      "danger": "#ff4d6d"
+    },
+    "borders": {
+      "default": "#00ffff",
+      "subtle": "#80ed99",
+      "strong": "#ffbe0b",
+      "focus": "#ff00ff",
+      "input": "#00ff66",
+      "danger": "#ff1744",
+      "warning": "#ff9100",
+      "userPrompt": "#ffff00"
+    },
+    "interactions": {
+      "hoverBackground": "#4361ee",
+      "activeBackground": "#3a0ca3",
+      "selectionBackground": "#f72585",
+      "selectionText": "#ffffff",
+      "accentBackground": "#7209b7",
+      "accentHover": "#560bad",
+      "accentActive": "#480ca8",
+      "menuSelection": "#4cc9f0",
+      "dropOverlay": "#06d6a0",
+      "scrollbarHover": "#ffbe0b",
+      "caret": "#ff006e",
+      "scrim": "rgba(255, 0, 255, 0.35)"
+    },
+    "buttons": {
+      "primaryBackground": "#ff006e",
+      "primaryHover": "#fb5607",
+      "secondaryBackground": "#8338ec",
+      "secondaryHover": "#3a86ff",
+      "secondaryActive": "#06d6a0"
+    },
+    "status": {
+      "infoBackground": "#0077b6",
+      "successBackground": "#007f5f",
+      "warningBackground": "#b86b00",
+      "dangerBackground": "#9d0208",
+      "infoSolid": "#00b4d8",
+      "successSolid": "#00c853",
+      "warningSolid": "#ff9100",
+      "dangerSolid": "#ff1744",
+      "discoverySolid": "#9b5de5",
+      "cautionSolid": "#ffea00",
+      "successSurface": "#004b23",
+      "warningSurface": "#6a4000",
+      "dangerSurface": "#660708"
+    },
+    "diff": {
+      "addedText": "#00ff66",
+      "deletedText": "#ff1744",
+      "modifiedText": "#ff9100",
+      "unchangedText": "#b0bec5",
+      "addedBackground": "rgba(0, 255, 102, 0.35)",
+      "deletedBackground": "rgba(255, 23, 68, 0.35)",
+      "surface": "#2b2d42"
+    },
+    "charts": {
+      "blue": "#00b4d8",
+      "green": "#00c853",
+      "orange": "#ff9100",
+      "purple": "#9b5de5",
+      "red": "#ff1744",
+      "yellow": "#ffea00"
+    },
+    "terminal": {
+      "foreground": "#f8f9fa",
+      "selection": "#6f2dbd",
+      "black": "#212529",
+      "red": "#d00000",
+      "green": "#00a86b",
+      "yellow": "#ffd60a",
+      "blue": "#0077b6",
+      "magenta": "#9b5de5",
+      "cyan": "#00b4d8",
+      "white": "#e9ecef",
+      "brightBlack": "#6c757d",
+      "brightRed": "#ff1744",
+      "brightGreen": "#00ff66",
+      "brightYellow": "#ffea00",
+      "brightBlue": "#3a86ff",
+      "brightMagenta": "#ff00ff",
+      "brightCyan": "#00ffff",
+      "brightWhite": "#ffffff"
+    },
+    "effects": {
+      "userPromptShadow": "rgba(255, 255, 0, 0.65)"
+    }
+  }
+}

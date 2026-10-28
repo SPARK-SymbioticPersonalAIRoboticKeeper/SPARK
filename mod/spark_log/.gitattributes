@@ -1,0 +1,10 @@
+* text=auto
+*.cmd text eol=lf
+*.ps1 text eol=lf
+*.psm1 text eol=lf
+*.md text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.jsonl text eol=lf
+
+viewer/vendor/*.js -text -whitespace

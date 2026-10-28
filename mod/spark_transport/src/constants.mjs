@@ -1,0 +1,23 @@
+export const APP_NAME = 'SPARK';
+export const APP_VERSION = '0.0.3';
+export const MCP_PROTOCOL_VERSION = '2026-07-28';
+export const DEFAULT_HOST = '127.0.0.1';
+export const DEFAULT_PORT = 8765;
+export const DEFAULT_MCP_PATH = '/mcp';
+export const DEFAULT_HEALTH_PATH = '/health';
+export const DEFAULT_MAX_READ_BYTES = 1024 * 1024;
+export const DEFAULT_COMMAND_TIMEOUT_MS = null;
+export const DEFAULT_COMMAND_HEARTBEAT_MS = 10000;
+export const DEFAULT_COMMAND_INITIAL_WAIT_MS = 2000;
+export const DEFAULT_COMMAND_REQUEST_SEGMENT_MS = 45000;
+export const DEFAULT_OPERATION_TIMEOUT_MS = 30000;
+export const DEFAULT_HTTP_REQUEST_TIMEOUT_MS = 15000;
+export const DEFAULT_SERVER_CLOSE_TIMEOUT_MS = 3000;
+export const DEFAULT_MAX_COMMAND_OUTPUT_BYTES = 64 * 1024;
+export const DEFAULT_LEDGER_STATUS_LIMIT = 10;
+export const MAX_REQUEST_BYTES = 1024 * 1024;
+
+export const META_PROTOCOL_VERSION = 'io.modelcontextprotocol/protocolVersion';
+export const META_CLIENT_CAPABILITIES = 'io.modelcontextprotocol/clientCapabilities';
+export const META_CLIENT_INFO = 'io.modelcontextprotocol/clientInfo';
+export const META_SERVER_INFO = 'io.modelcontextprotocol/serverInfo';

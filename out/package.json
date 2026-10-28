@@ -1,0 +1,19 @@
+{
+  "name": "spark",
+  "version": "0.0.3",
+  "private": true,
+  "description": "SPARK local agent runtime with Transport, ChatGPT UI, and future modules.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node ../mod/spark_transport/src/cli.mjs serve",
+    "transport:start": "node ../mod/spark_transport/src/cli.mjs start",
+    "transport:status": "node ../mod/spark_transport/src/cli.mjs status",
+    "transport:stop": "node ../mod/spark_transport/src/cli.mjs stop",
+    "test": "node ./spark/script/test-all.mjs ../mod/spark_transport/test/*.test.mjs ../mod/spark_ui/test/*.test.mjs ../mod/spark_log/test/*.test.mjs ../mod/spark_cii/test/*.test.mjs",
+    "test:protocol": "node ./spark/script/test-all.mjs ../mod/spark_transport/test/mcp-http.test.mjs",
+    "chatgpt-ui:validate": "node ../mod/spark_ui/src/cli.mjs validate --theme ../mod/spark_ui/config/dark-red-theme.json"
+  }
+}
